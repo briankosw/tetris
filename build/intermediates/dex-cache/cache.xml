@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/BrianKo/.android/build-cache/1b1d3381720eb422ed5dbd29db1f4b7c2be7b7bd/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/BrianKo/Desktop/Programming/School/CS126/Tetris3/app/build/intermediates/pre-dexed/debug/classes_75da701a6e0fb1230a88855e26f7c7afca26c02b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/BrianKo/.android/build-cache/85ab1ad688930545444be55d6bb0588065a23cc7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/BrianKo/Desktop/Programming/School/CS126/Tetris3/app/build/intermediates/pre-dexed/debug/classes_7ee982fd0afc7205ec5b2202fcab140066693565.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/BrianKo/.android/build-cache/848076b0c8e28b63c05418c9117cf2b886bda172/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="568d5bda0b4d51f90d978ace369bb9ad024d2057">
+        <dex dex="/Users/BrianKo/Desktop/Programming/School/CS126/Tetris3/app/build/intermediates/pre-dexed/debug/classes_cf3e303df772930fcee5111dd40cd585144d7ef0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/BrianKo/.android/build-cache/d14aeaafc0ae135e3789a51fb29ab418e5bf3943/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/Users/BrianKo/Desktop/Programming/School/CS126/Tetris3/app/build/intermediates/pre-dexed/debug/classes_16f0a168b0a2be0a425492179bf9668a6aa05282.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/BrianKo/.android/build-cache/173e7b7d3ef21904fad96a7c7e60987ed9131fdd/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/BrianKo/Desktop/Programming/School/CS126/Tetris3/app/build/intermediates/pre-dexed/debug/classes_ca81338545942f5b65e8ce9e9c2e2394be8e0916.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/BrianKo/.android/build-cache/f7c82566224b74d2974d88f9d263212a6c7d4e2b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/BrianKo/Desktop/Programming/School/CS126/Tetris3/app/build/intermediates/pre-dexed/debug/classes_8ea2b315568a60bbef5ac91ffaac30241e503570.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/BrianKo/.android/build-cache/8dc0c0d2609fdef9132958330950e16047418546/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aec1bc54964a85d851c2c1b1cb7f90f7dbd755ab">
+        <dex dex="/Users/BrianKo/Desktop/Programming/School/CS126/Tetris3/app/build/intermediates/pre-dexed/debug/classes_36def4a464fbeb7d0355c192247983f9211dd9ad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/BrianKo/.android/build-cache/c20cc4383960a405ef1024e67f722cb255159e45/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/BrianKo/Desktop/Programming/School/CS126/Tetris3/app/build/intermediates/pre-dexed/debug/classes_fcc70f47b5ae8249156491070355f6c95fb3797c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/BrianKo/.android/build-cache/6fe118707733fac65c83a38a5661e2c0c38d45f7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="51a11c41a08f099a204e1b8dcc04f27217de50ec">
+        <dex dex="/Users/BrianKo/Desktop/Programming/School/CS126/Tetris3/app/build/intermediates/pre-dexed/debug/classes_a70b4a119423e9f98e5e01087aa8481efeb4e1a0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/BrianKo/.android/build-cache/047bccebf241a639a3746c0302dcbf57c57e1907/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/BrianKo/Desktop/Programming/School/CS126/Tetris3/app/build/intermediates/pre-dexed/debug/classes_45267191fe200dbdb2bc148ab112fcd9349a6663.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/BrianKo/.android/build-cache/29f5fc927698e445856c8cb572ad0a2fc7465c3d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/BrianKo/Desktop/Programming/School/CS126/Tetris3/app/build/intermediates/pre-dexed/debug/classes_051821559bf64bcf4359cc18348afc188649606f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/BrianKo/.android/build-cache/f5b6cc5633e2957cb1f8cf16e0d877a050e66281/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a511c684ea4c2cf31a3377d51e7677cb76696e07">
+        <dex dex="/Users/BrianKo/Desktop/Programming/School/CS126/Tetris3/app/build/intermediates/pre-dexed/debug/classes_6b9b3247f90df1aed572c3010e3ca1b4c96f848c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/BrianKo/.android/build-cache/bdc9941edcc9b01de7b60f27cb3ba7479ab1e9f8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/BrianKo/Desktop/Programming/School/CS126/Tetris3/app/build/intermediates/pre-dexed/debug/classes_1a98cf5f1554ffb2e8ab71655ffeb9293ed20084.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/BrianKo/.android/build-cache/678a00d336664275dbc4106fdf3dc8be1a126148/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9919563cffd8e3732e944d3c437d4b9575a08448">
+        <dex dex="/Users/BrianKo/Desktop/Programming/School/CS126/Tetris3/app/build/intermediates/pre-dexed/debug/classes_2781747e398c3a0403c8cf7654a05569abc9a9da.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/BrianKo/.android/build-cache/1078878c3211ca3d7f53b5f256fff936b7d1720d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="79e298d7fed2fcada58da7032d07d34ee198a545">
+        <dex dex="/Users/BrianKo/Desktop/Programming/School/CS126/Tetris3/app/build/intermediates/pre-dexed/debug/classes_ad630d7ae7d6d670fb8670448a9287b2a033b59c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/BrianKo/.android/build-cache/6e3b44826b5a53aebd735d512e2aa90777baf2f5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/Users/BrianKo/Desktop/Programming/School/CS126/Tetris3/app/build/intermediates/pre-dexed/debug/classes_5b741a78551e5f799993639b7c2bcf337b458698.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/BrianKo/.android/build-cache/beb4a9111561b632509f24aafd69c9ddd49cab26/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/Users/BrianKo/Desktop/Programming/School/CS126/Tetris3/app/build/intermediates/pre-dexed/debug/classes_b8b8ce6cfbf0aba125dc95fd1a8bc0e946eb8833.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/BrianKo/.android/build-cache/eafc074c09ccf4074ea2b85ed63618e96a4f8d5a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4022261eeea0d92eb2997a68d2c1f084a16abad9">
+        <dex dex="/Users/BrianKo/Desktop/Programming/School/CS126/Tetris3/app/build/intermediates/pre-dexed/debug/classes_68af72db3e024a8a87fea9d433cb39dc2ff478a6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/BrianKo/.android/build-cache/2f9f4794753f5d82ba57ca36193a435564cbe07a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="94d9cedd04b124aed044ac71c451a292856d854c">
+        <dex dex="/Users/BrianKo/Desktop/Programming/School/CS126/Tetris3/app/build/intermediates/pre-dexed/debug/classes_fee0e7a8442bd7a6dc9b1af786464661fc12f63d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/BrianKo/.android/build-cache/68b4a5e7f9096b3ab2fd72f66145dc6344c16040/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b3d0809a742c5f768c6aa9efc6decd5c1d6cd227">
+        <dex dex="/Users/BrianKo/Desktop/Programming/School/CS126/Tetris3/app/build/intermediates/pre-dexed/debug/classes_568b2653f14312aeb09bf9b1d47a79b2f6ff147c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/BrianKo/.android/build-cache/1f500444d38d5ad2ab4fe243811972032ff07910/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa472b7cbd3897bf6bed6068ac0b00e494987688">
+        <dex dex="/Users/BrianKo/Desktop/Programming/School/CS126/Tetris3/app/build/intermediates/pre-dexed/debug/classes_c24e2b3c062ffac8fa355ee9c991048e3693ddb8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/BrianKo/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/BrianKo/Desktop/Programming/School/CS126/Tetris3/app/build/intermediates/pre-dexed/debug/support-annotations-25.3.1_4d0bab6f58e739d934b715f85980436df230df3f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/BrianKo/.android/build-cache/38c9b5e5b2ed7e8ea3ddcbd0f4e89892213973ca/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/BrianKo/Desktop/Programming/School/CS126/Tetris3/app/build/intermediates/pre-dexed/debug/classes_4e765a7e855c53ae9551fba8880988f52c5556fa.jar" />
+    </item>
+
+</items>

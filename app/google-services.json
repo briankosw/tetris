@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "88471807852",
+    "firebase_url": "https://tetris2-ec168.firebaseio.com",
+    "project_id": "tetris2-ec168",
+    "storage_bucket": "tetris2-ec168.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88471807852:android:baa3968ad9ef96ae",
+        "android_client_info": {
+          "package_name": "com.briankosw.tetris2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88471807852-cqt3rnnblslg8lvanq2da46dht8p71tj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAPQvXQO6XocrZbFhgintU1fEUKDJgb2I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88471807852:android:2c938c6bc827b75f",
+        "android_client_info": {
+          "package_name": "com.briankosw.tetris3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88471807852-bus7bk9q74dceqmfj3ld1tc1ol1f15pe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.briankosw.tetris3",
+            "certificate_hash": "d40134e88f41dd88bb65dfd9c30261f6eec08a1d"
+          }
+        },
+        {
+          "client_id": "88471807852-cqt3rnnblslg8lvanq2da46dht8p71tj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAPQvXQO6XocrZbFhgintU1fEUKDJgb2I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88471807852-cqt3rnnblslg8lvanq2da46dht8p71tj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
