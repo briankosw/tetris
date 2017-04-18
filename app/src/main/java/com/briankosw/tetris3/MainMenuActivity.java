@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 /**
  * MainMenuActivity is the page after the user is logged-in/registered. It contains a list of
  * buttons leading to different pages such as Tetris game, leaderboard, chatting, and account details
@@ -59,6 +61,7 @@ public class MainMenuActivity extends AppCompatActivity{
         accountButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
                 startActivity(new Intent(MainMenuActivity.this, AccountActivity.class));
             }
         });

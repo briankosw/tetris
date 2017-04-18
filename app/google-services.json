@@ -8,43 +8,20 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:88471807852:android:baa3968ad9ef96ae",
-        "android_client_info": {
-          "package_name": "com.briankosw.tetris2"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "88471807852-cqt3rnnblslg8lvanq2da46dht8p71tj.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCAPQvXQO6XocrZbFhgintU1fEUKDJgb2I"
-        }
-      ],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:88471807852:android:2c938c6bc827b75f",
         "android_client_info": {
           "package_name": "com.briankosw.tetris3"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "88471807852-n7g8j8dhg3g58a2rp022g35r76cpc3jk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.briankosw.tetris3",
+            "certificate_hash": "800eaa7b63e701310f4ebfdfdc63658c3b76f532"
+          }
+        },
         {
           "client_id": "88471807852-bus7bk9q74dceqmfj3ld1tc1ol1f15pe.apps.googleusercontent.com",
           "client_type": 1,
