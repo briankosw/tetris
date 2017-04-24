@@ -10,19 +10,29 @@ import java.util.HashSet;
 public class User {
     public String email;
     public String name;
-    public HashMap<String, Boolean> friendList;
-    public HashSet<String> pendingList;
-    public int score;
 
     public User(){
 
     }
 
-    public User(String email, String name, HashMap friendList, HashSet pendingList, int score) {
+    public User(String email, String name) {
         this.email = email;
         this.name = name;
-        this.friendList = friendList;
-        this.pendingList = pendingList;
-        this.score = score;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

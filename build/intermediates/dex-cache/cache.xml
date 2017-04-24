@@ -21,6 +21,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\briankosw\Desktop\TETRISS\Tetris\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="C:\Users\briankosw\Desktop\TETRISS\Tetris\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_6be2b2beea9570c5ec643105da296109a4f66b46\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\briankosw\.android\build-cache\f57f6867b2c7d81a64ed154408eb1240bc84fc63\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -81,6 +90,15 @@
         revision="25.0.2"
         sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
         <dex dex="C:\Users\briankosw\Desktop\tetris\Tetris\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c926cd675c671b6741e7757c3ae29c60a41889da\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\briankosw\Desktop\TETRISS\Tetris\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="40db862cebda6b561176ea16ec6d8d37ef3da204">
+        <dex dex="C:\Users\briankosw\Desktop\TETRISS\Tetris\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_50fafb8ea2bd950e72eb6266d99f1b4d22e9b656\classes.dex" />
     </item>
     <item
         is-multidex="true"

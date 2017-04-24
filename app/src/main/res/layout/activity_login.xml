@@ -7,6 +7,15 @@
     android:fitsSystemWindows="true"
     tools:context="com.briankosw.tetris3.LoginActivity">
 
+    <ImageView
+        android:id="@+id/logoButton"
+        android:layout_width="@dimen/logo_width"
+        android:layout_height="@dimen/logo_height"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:src="@drawable/tetris_logo" />
+
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="30dp"
@@ -22,7 +31,7 @@
         android:gravity="center"
         android:orientation="vertical"
         android:padding="@dimen/activity_horizontal_margin"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="230dp"
         android:visibility="gone" >
 
         <android.support.design.widget.TextInputLayout
@@ -81,6 +90,7 @@
             android:layout_height="wrap_content"
             android:background="@color/colorAccent"
             android:layout_marginTop="16dp" />
+
         <Button
             android:id="@+id/registerButton"
             android:text="@string/registerButton"
@@ -91,12 +101,4 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/logoButton"
-        android:layout_width="@dimen/logo_width"
-        android:layout_height="@dimen/logo_height"
-        android:layout_gravity="center"
-        android:orientation="vertical"
-        android:padding="@dimen/activity_horizontal_margin"
-        android:src="@drawable/tetris_logo" />
 </FrameLayout>

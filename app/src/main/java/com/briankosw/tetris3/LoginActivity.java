@@ -22,8 +22,6 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.util.HashMap;
-import java.util.HashSet;
 import java.util.regex.Pattern;
 
 /**
@@ -31,13 +29,20 @@ import java.util.regex.Pattern;
  * the user is able to register and/or login to use this application.
  */
 public class LoginActivity extends AppCompatActivity {
-    private static final int translateValue = -400;
-    private static final int translateDuration = 1000;
-    private static final int crossFadeDuration = 1100;
-    private static final float crossFadeInitValue = 0f;
-    private static final float crossFadeFinalValue = 1f;
-    private static final int requiredPasswordLength = 6;
-    private static final int initScore = 0;
+    private static final int TRANSLATE_VALUE = -400;
+    private static final int TRANSLATE_DURATION = 1000;
+    private static final int CROSSFADE_DURATION = 1100;
+    private static final float CROSSFADE_INIT_VALUE = 0f;
+    private static final float CROSSFADE_FINAL_VALUE = 1f;
+    private static final int REQUIRED_PASSWORD_LENGTH = 6;
+    private static final int INIT_SCORE = 0;
+    private static final String EMAIL_REGEX = "(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%" +
+            "&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x07\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\" +
+            "x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-" +
+            "9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9]" +
+            "[0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\" +
+            "x01-\\x07\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x" +
+            "0c\\x0e-\\x7f])+)\\])";
     private ImageView logoImage;
     private EditText nameEditText;
     private EditText emailEditText;
@@ -46,6 +51,7 @@ public class LoginActivity extends AppCompatActivity {
     private Button registerButton;
     private ProgressBar progressBar;
     private FirebaseAuth authentication;
+    private DatabaseReference databaseRef;
 
     /**
      * Overridden onCreate method that sets up all the Views on this Activity, the buttons, and
@@ -59,6 +65,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         authentication = FirebaseAuth.getInstance();
+        databaseRef = FirebaseDatabase.getInstance().getReference();
         logoImage = (ImageView)findViewById(R.id.logoButton);
         nameEditText = (EditText)findViewById(R.id.nameEditText);
         emailEditText = (EditText)findViewById(R.id.emailEditText);
@@ -68,17 +75,6 @@ public class LoginActivity extends AppCompatActivity {
         progressBar = (ProgressBar)findViewById(R.id.progressBar);
 
         setUpButtons();
-        FirebaseAuth.getInstance().addAuthStateListener(new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
-                if (firebaseUser == null) {
-                    nameEditText.setText("");
-                    emailEditText.setText("");
-                    passwordEditText.setText("");
-                }
-            }
-        });
     }
 
     /**
@@ -88,8 +84,8 @@ public class LoginActivity extends AppCompatActivity {
         logoImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                TranslateAnimation transAnimation = new TranslateAnimation(0, 0, 0, translateValue);
-                transAnimation.setDuration(translateDuration);
+                TranslateAnimation transAnimation = new TranslateAnimation(0, 0, 0, TRANSLATE_VALUE);
+                transAnimation.setDuration(TRANSLATE_DURATION);
                 transAnimation.setFillAfter(true);
                 logoImage.startAnimation(transAnimation);
                 crossFade();
@@ -193,10 +189,10 @@ public class LoginActivity extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
                         startActivity(new Intent(LoginActivity.this, MainMenuActivity.class));
-                        DatabaseReference databaseRef = FirebaseDatabase.getInstance().getReference("users");
                         String userId = databaseRef.push().getKey();
-                        User user = new User(email, name, new HashMap<>(), new HashSet<>(), initScore);
-                        databaseRef.child(userId).setValue(user);
+                        User user = new User(email, name);
+                        databaseRef.child("users").child(userId).setValue(user);
+                        databaseRef.child("scores").child(userId).setValue(INIT_SCORE);
                     } else {
                         if (task.getException().toString()
                                                     .contains(getString(R.string.taken_email))) {
@@ -223,7 +219,7 @@ public class LoginActivity extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     progressBar.setVisibility(View.GONE);
                     if (task.isSuccessful()) {
-                        startActivity(new Intent(LoginActivity.this, GestureDetectorExample.class));
+                        startActivity(new Intent(LoginActivity.this, MainMenuActivity.class));
                     } else {
                         Toast.makeText(LoginActivity.this, getString(R.string.failed_authentication),
                                 Toast.LENGTH_SHORT).show();
@@ -239,8 +235,7 @@ public class LoginActivity extends AppCompatActivity {
      * @return true/false depending on validity of user input
      */
     private boolean isEmailValid(String email) {
-        final String emailRegex = "(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x07\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x07\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])";
-        Pattern emailPattern = Pattern.compile(emailRegex);
+        Pattern emailPattern = Pattern.compile(EMAIL_REGEX);
         return emailPattern.matcher(email).matches();
     }
 
@@ -261,8 +256,8 @@ public class LoginActivity extends AppCompatActivity {
      * @param password string of password input by user
      * @return true/false depending on length of user input
      */
-    private boolean isPasswordValid(String password) {
-        return password.length() > requiredPasswordLength;
+    public boolean isPasswordValid(String password) {
+        return password.length() > REQUIRED_PASSWORD_LENGTH;
     }
 
     /**
@@ -271,10 +266,10 @@ public class LoginActivity extends AppCompatActivity {
     private void crossFade() {
         LinearLayout linearLayout = (LinearLayout)findViewById(R.id.loginLinearLayout);
         linearLayout.setVisibility(View.VISIBLE);
-        linearLayout.setAlpha(crossFadeInitValue);
+        linearLayout.setAlpha(CROSSFADE_INIT_VALUE);
         linearLayout.animate()
-                .alpha(crossFadeFinalValue)
-                .setDuration(crossFadeDuration)
+                .alpha(CROSSFADE_FINAL_VALUE)
+                .setDuration(CROSSFADE_DURATION)
                 .setListener(null);
     }
 }

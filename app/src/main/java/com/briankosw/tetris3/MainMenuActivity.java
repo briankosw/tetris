@@ -16,12 +16,11 @@ public class MainMenuActivity extends AppCompatActivity{
     private Button playButton;
     private Button leaderboardButton;
     private Button chattingButton;
-    private Button accountButton;
 
     /**
      * Overridden onCreate method that sets up the views on this Activity and buttons.
      *
-     * @param savedInstanceState
+     * @param savedInstanceState savedInstanceState bundle
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +30,6 @@ public class MainMenuActivity extends AppCompatActivity{
         playButton = (Button)findViewById(R.id.playGameButton);
         leaderboardButton = (Button)findViewById(R.id.leaderboardButton);
         chattingButton = (Button)findViewById(R.id.chattingRoomButton);
-        accountButton = (Button)findViewById(R.id.accountButton);
 
         setUpButtons();
     }
@@ -56,13 +54,6 @@ public class MainMenuActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainMenuActivity.this, ChattingActivity.class));
-            }
-        });
-        accountButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FirebaseAuth.getInstance().signOut();
-                startActivity(new Intent(MainMenuActivity.this, AccountActivity.class));
             }
         });
     }

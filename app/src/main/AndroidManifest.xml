@@ -25,7 +25,6 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".GestureDetectorExample" />
         <activity android:name=".ChattingActivity" />
-        <activity android:name=".AccountActivity"></activity>
     </application>
 
 </manifest>
